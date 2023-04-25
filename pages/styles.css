@@ -3,19 +3,24 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Courier New', monospace;
 }
 
 .root {
     display: flex;
     place-content: center flex-start;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(142, 196, 228);
+   background-image: url('https://media.giphy.com/media/mQqDE6vBjY3Di/giphy.gif');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    
     flex-flow: column nowrap;
     gap: 10px;
     height: 100vh;
     overflow: auto;
-    padding: 0px;
+    padding: 0x;
     position: relative;
 }
 
@@ -44,11 +49,18 @@ body {
 }
 
 .header-title {
+    
     display: flex;
     gap: 12px;
 }
 
 .header-title h1 {
+    background-color: rgb(57, 73, 46);
+    border-radius: 60px;
+    border: 10px solid #5f724b;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
     width: 100%;
     font-weight: 700;
     font-size: 72px;
@@ -59,14 +71,28 @@ body {
 }
 
 .header-subtitle h2 {
+    background-color: rgb(57, 73, 46);
+    border-radius: 60px;
+    border: 10px solid #5f724b;
+  padding: 20px;
+  width: 400px;
+  height: 50px;
+    
     font-size: 20px;
     font-style: normal;
     font-weight: 400;
     line-height: 1.4em;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(233, 226, 226, 0.75);
+    background-color: rgb(57, 73, 46)
 }
 
 .prompt-container {
+    background-color: rgb(57, 73, 46);
+    border-radius: 60px;
+    border: 10px solid #5f724b;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
     place-content: flex-end center;
     align-items: center;
     display: flex;
@@ -74,20 +100,27 @@ body {
     flex-flow: column nowrap;
     gap: 16px;
     height: min-content;
-    padding: 0px;
+    padding: 20px;
     width: min-content;
+    background-color: rgb(57, 73, 46)
 }
 
 .prompt-box {
+    background-color: rgb(193, 216, 178);
+    border-radius: 60px;
+    border: 10px solid #cfdbc2;
+  padding: 20px;
+  width: 200px;
+  height: 150px;
     border-bottom-width: 1px;
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgba(121, 159, 185, 0.1);
     border-left-width: 1px;
     border-right-width: 1px;
     border-style: solid;
     border-top-width: 1px;
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(133, 183, 202, 0.05);
     border-radius: 16px;
     display: flex;
     flex: 0 0 auto;
@@ -114,12 +147,12 @@ body {
 }
 
 textarea {
-    font-family: 'Manrope', sans-serif;
+    font-family: 'Courier New', monospace;
 }
 
 
 .prompt-box:focus {
-    border-color:rgba(255, 255, 255, 0.75)
+    border-color:rgba(212, 197, 197, 0.75)
 }
 
 
@@ -172,7 +205,7 @@ textarea {
 .generate-button {
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgb(255, 79, 18);
+    background-color: rgb(128, 176, 207);
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
